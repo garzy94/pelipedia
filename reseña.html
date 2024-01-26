@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,58 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Nunito:ital,wght@0,400;1,300&family=Tajawal&display=swap"
         rel="stylesheet">
 </head>
-<body>
-    
 
+<body>
+    <header>
+        <div id="pelipedia">
+        <img id="logo" src="img/logo.png" alt="Logo de Pelipedia">
+        <h1 id="titulo">PELI<span id="pedia">PEDIA</span></h1>
+        </div>
+    
+        <input id="buscador" type="text" placeholder="Buscar película...">
+        
+        <div id="iconos">
+        <img class="icono" src="img/usuario.png" alt="Iniciar sesión">
+        <img class="icono" src="img/fav.png" alt="Favoritos">
+        </div>
+    </header>
+
+    <main id="main">
+
+        <div id="escribir">
+        
+        <h3>Escribir una <span class="verde">reseña:</span></h3>
+    </div>
+
+        <h4 id="tituloR">Titulo: <input id="fondoV" type="text" value="Una película increíble"> </h4>
+
+        <div id="reseña">
+
+            <p id="textoRes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut</p>
+        </div>
+           
+        <div id="puntuacion">
+        <p id="nota">Nota:</p>
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrella.png" alt="Estrella de puntuación rellena">
+            <img class= "estrella" src="img/estrellaVacia.png" alt="Estrella de puntuación vacía">
+            <img class= "estrella" src="img/estrellaVacia.png" alt="Estrella de puntuación vacía">
+            <img class= "estrella" src="img/estrellaVacia.png" alt="Estrella de puntuación vacía">
+            <img class= "estrella" src="img/estrellaVacia.png" alt="Estrella de puntuación vacía">
+            </div>
+
+            <input id="enviar2" type="submit" value="Enviar">
     <footer>
-        <p id="copy">Pelipedia 2023 &#169 | Todos los derechos reservados</p>
+        <p id="copy">Pelipedia 2023 &#169; | Todos los derechos reservados</p>
     </footer>
+    </main>
 </body>
+
 </html>

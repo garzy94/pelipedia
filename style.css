@@ -2,17 +2,14 @@
     margin: 0px;
     padding: 0px;
     color: white;
-    font-family: 'Exo 2', sans-serif;
-    font-family: 'Nunito', sans-serif;
     font-family: 'Snippet', sans-serif;
 }
 
-header{
+/* Header */
+
+header {
     background-color: #559576;
-    height: 100px;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -20,8 +17,6 @@ header{
 #pelipedia {
     height: 100px;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
     align-items: center;
 }
 
@@ -32,7 +27,6 @@ header{
 #logo {
     padding-left: 30px;
     padding-right: 15px;
-    max-width: 100%;
     max-height: 70%;
 }
 
@@ -45,12 +39,18 @@ header{
     height: 30px;
     background-color: #93B1A6;
     border: solid 1px black;
+    border-radius: 25px;
+    background-image: url('img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 24px;
 }
 
 #buscador::placeholder {
     color: white;
     font-size: 20px;
     padding-left: 8px;
+    padding: 10px;
 }
 
 .boton {
@@ -69,6 +69,8 @@ header{
     padding-right: 85px;
 }
 
+/* Cuerpo y página inicio */
+
 main {
     height: 80%;
     background-color: black;
@@ -78,8 +80,11 @@ main {
 .verde {
     color: #5C8374;
     padding: 0;
-    padding-bottom: 50px;
     margin: 0;
+}
+
+#elegimos {
+    margin-bottom: 45px;
 }
 
 h3 {
@@ -94,22 +99,20 @@ h4 {
 
 .columna {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding-top: 15px;
 }
 
 .titulos {
     display: grid;
-    grid-template-columns: repeat(5, 11%);
-    grid-gap: 8px; 
+    grid-template-columns: repeat(5, 11.5%);
+    grid-gap: 8px;
     justify-content: center;
 }
 
 .portada {
     width: 180px;
-    height: 100%;
     padding: 18px;
 }
 
@@ -167,3 +170,1364 @@ footer {
     font-family: 'Nunito', sans-serif;
     font-family: 'Tajawal', sans-serif;
 }
+
+/* Página película*/
+
+#ficha {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    column-gap: 95px;
+    padding-top: 70px;
+}
+
+h4>img {
+    width: 25px;
+}
+
+#parentesis2 {
+    color: #5C8374;
+    font-family: 'Snippet', sans-serif;
+    font-size: 22px;
+}
+
+.estrellaP {
+    width: 20px;
+}
+
+#textoF {
+    width: 300px;
+    font-size: 18px;
+    text-align: start;
+}
+
+#piePelicula {
+    display: flex;
+    padding-top: 10px;
+}
+
+#piePelicula>p {
+    font-family: 'Tajawal', sans-serif;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.textoP {
+    color: #93B1A6;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+#genero,
+#duracion {
+    font-family: 'Tajawal', sans-serif;
+    text-align: start;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#textoF>p {
+    font-family: 'Tajawal', sans-serif;
+}
+
+#textoF>h4 {
+    font-weight: lighter;
+    padding-bottom: 7px;
+    font-family: 'Snippet', sans-serif;
+}
+
+.notaP {
+    color: #93B1A6;
+}
+
+#trailer {
+    font-size: 40px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#usuario {
+    font-family: 'Snippet', sans-serif;
+    margin-bottom: 36px;
+    font-weight: lighter;
+}
+
+#escribir {
+    font-family: 'Snippet', sans-serif;
+    margin:auto;
+    margin-bottom: 36px;
+}
+
+#escribir>h3 {
+    font-weight: lighter;
+}
+
+#palomitas {
+    width: 50px;
+    padding-left: 10px;
+}
+
+#contenedorReseña {
+    position: relative;
+}
+
+#botonReseña {
+    position: absolute;
+    top: 45%;
+    right: 200px;
+}
+
+/* Página sesión */
+
+#mainSes {
+    padding-bottom: 75px;
+}
+
+#usuarioG {
+    width: 60px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+#sesion {
+    width: 40%;
+    background-color: #D9D9D9;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 38px;
+}
+
+.iniSes {
+    border: none;
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#userText {
+    font-size: 30px;
+    font-family: 'Tajawal', sans-serif;
+    color: #5C8374;
+    padding-bottom: 10px;
+}
+
+#passText {
+    font-size: 30px;
+    font-family: 'Tajawal', sans-serif;
+    color: #93B1A6;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.preguntas {
+    padding-top: 45px;
+}
+
+.olvidaste {
+    color: #5C8374;
+    font-size: 30px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.enlace {
+    cursor: pointer;
+    color: #93B1A6;
+    font-size: 30px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+#enviar {
+    background-color: #93B1A6;
+    color: black;
+    font-size: 25px;
+    font-family: 'Tajawal', sans-serif;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    border: 0.2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    line-height: 50%;
+}
+
+/* Página reseña */
+
+#escribir {
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    font-weight: lighter;
+}
+
+#reseña {
+    background-color: #93B1A6;
+    width: 40%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#textoRes {
+    font-size: 28px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    margin: 20px 50px;
+}
+
+#tituloR {
+    display: flex;
+    font-size: 28px;
+    color: #93B1A6;
+    padding-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+#fondoV {
+    background-color: #93B1A6;
+    border: none;
+    width: 35%;
+    height: 30px;
+    margin-left: 12px;
+    font-size: 23px;
+    padding-left: 8px;
+}
+
+#puntuacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 75px;
+    align-items: center;
+}
+
+#nota {
+    font-size: 35px;
+    padding-right: 15px;
+}
+
+.estrella {
+    width: 55px;
+}
+
+#enviar2 {
+    background-color: #93B1A6;
+    color: black;
+    font-size: 25px;
+    font-family: 'Tajawal', sans-serif;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    border: 0.2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    line-height: 50%;
+    margin-bottom: 135px;
+}
+
+/* Responsive página INICIO*/
+
+/* Aquí he tenido que hacerlo en muchos tamaños, ya que cometí un error ajustando el texto de las columnas, 
+y se desplaza continuamente, por lo que para esta primera web tengo muchos tamaños. */
+
+@media (max-width: 1600px) {
+    .titulos {
+        grid-template-columns: repeat(5, 13%);
+    }
+}
+
+@media (max-width: 1500px) {
+    .titulos {
+        grid-template-columns: repeat(5, 14.5%);
+    }
+}
+
+@media (max-width: 1400px) {
+    .titulos {
+        grid-template-columns: repeat(5, 15%);
+    }
+}
+
+@media (max-width: 1300px) {
+    .titulos {
+        grid-template-columns: repeat(5, 16%);
+    }
+}
+
+@media (max-width: 1250px) {
+    .titulos {
+        grid-template-columns: repeat(5, 16.5%);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #titulo {
+        font-size: 36px;
+    }
+
+    #logo {
+        max-height: 65%;
+    }
+
+    #buscador {
+        width: 510px;
+    }
+
+    .boton {
+        width: 45px;
+        padding: 0 40px;
+    }
+
+    #iconos {
+        padding-right: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 14.5%);
+    }
+
+    .portada {
+        width: 150px;
+        padding: 15px;
+    }
+
+    footer {
+        height: 85px;
+        font-size: 23px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    #titulo {
+        font-size: 34px;
+    }
+
+    #logo {
+        max-height: 60%;
+    }
+
+    #buscador {
+        width: 450px;
+    }
+
+    .boton {
+        width: 35px;
+        padding: 0 5px;
+    }
+
+    #iconos {
+        padding-right: 30px;
+    }
+
+    .icono {
+        width: 45px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    h4 {
+        font-size: 23px;
+        padding-bottom: 20px;
+        text-align: start;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 17%);
+        grid-gap: 8px;
+    }
+
+    .portada {
+        width: 140px;
+        padding: 15px;
+    }
+
+    #texto > p {
+        font-size: 18px;
+    }
+
+    #random {
+        width: 50px;
+    }
+
+    footer {
+        height: 80px;
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 940px) {
+
+    #titulo {
+        font-size: 30px;
+    }
+
+    #logo {
+        max-height: 58%;
+    }
+
+    #buscador {
+        width: 420px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 25px;
+    }
+
+    .icono {
+        width: 42px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 17.5%);
+        grid-gap: 8px;
+    }
+
+    .portada {
+        width: 140px;
+        padding: 15px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 40px;
+        width: 50px;
+    }
+
+    footer {
+        height: 80px;
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    #titulo {
+        font-size: 22px;
+    }
+
+    #logo {
+        max-height: 55%;
+    }
+
+    #buscador {
+        width: 390px;
+    }
+
+    #buscador::placeholder {
+        font-size: 16px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 22px;
+    }
+
+    .icono {
+        width: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 18.5%);
+        grid-gap: 8px;
+    }
+
+    .portada {
+        width: 130px;
+        padding: 15px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 40px;
+        width: 45px;
+    }
+
+    footer {
+        height: 80px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #titulo {
+        font-size: 22px;
+    }
+
+    #logo {
+        max-height: 55%;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #buscador {
+        width: 320px;
+    }
+
+    #buscador::placeholder {
+        font-size: 16px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 22px;
+    }
+
+    .icono {
+        width: 38px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 21px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 16.5%);
+        grid-gap: 8px;
+    }
+
+    .portada {
+        width: 100px;
+        padding: 15px;
+    }
+
+    #texto p {
+        font-size: 17px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 40px;
+        width: 40px;
+    }
+
+    footer {
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 696px) {
+
+    #titulo {
+        font-size: 20px;
+    }
+
+    #logo {
+        max-height: 52%;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    #buscador {
+        width: 280px;
+    }
+
+    #buscador::placeholder {
+        font-size: 16px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 22px;
+    }
+
+    .icono {
+        width: 38px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .portada {
+        width: 100px;
+        padding: 14px;
+    }
+
+    h4 {
+        font-size: 21px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 18%);
+        grid-gap: 8px;
+    }
+
+    #texto p {
+        font-size: 17px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 40px;
+        width: 40px;
+    }
+
+    footer {
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .titulos {
+        grid-template-columns: repeat(5, 19%);
+        grid-gap: 8px;
+    }
+}
+
+
+@media (max-width: 626px) {
+
+    #titulo {
+        font-size: 18px;
+    }
+
+    #logo {
+        max-height: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #buscador {
+        width: 260px;
+    }
+
+    #buscador::placeholder {
+        font-size: 15px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #titulo {
+        font-size: 20px;
+    }
+
+    #logo {
+        max-height: 49%;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    #buscador {
+        width: 220px;
+    }
+
+    #buscador::placeholder {
+        font-size: 16px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 18px;
+    }
+
+    .icono {
+        width: 32px;
+        padding: 7px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .portada {
+        width: 90px;
+        padding: 14px;
+    }
+
+    h4 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 19.5%);
+        grid-gap: 8px;
+        font-size: 12px;
+    }
+
+    #napoleon {
+        width: 180px;
+    }
+
+    #texto p {
+        font-size: 17px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 40px;
+        width: 40px;
+    }
+
+    footer {
+        height: 70px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 525px) {
+
+    #titulo {
+        font-size: 18px;
+    }
+
+    #logo {
+        max-height: 47%;
+        padding-left: 12px;
+        padding-right: 8px;
+    }
+
+    #buscador {
+        width: 200px;
+    }
+
+    #buscador::placeholder {
+        font-size: 16px;
+        padding:8px;
+    }
+
+    .boton {
+        display: none;
+    }
+
+    #iconos {
+        padding-right: 18px;
+    }
+
+    .icono {
+        width: 31px;
+        padding: 6px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .portada {
+        width: 70px;
+        padding: 14px;
+    }
+
+    h4 {
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+
+    .titulos {
+        grid-template-columns: repeat(5, 17.5%);
+        grid-gap: 8px;
+    }
+
+    .titulos p {
+        font-size: 15px;
+    }
+
+    #napoleon {
+        width: 160px;
+    }
+
+    #texto p {
+        font-size: 15px;
+    }
+
+    #random {
+        margin: auto;
+        display: flex;
+        padding-bottom: 38px;
+        width: 38px;
+    }
+
+    footer {
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive PELÍCULA */
+
+
+@media (max-width: 1400px) {
+
+    #textoRes {
+        font-size: 28px;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        margin: 20px 50px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    #textoF {
+        width: 300px;
+        font-size: 17px;
+        text-align: start;
+    }
+
+    #trailer {
+        font-size: 38px;
+    }
+
+    #textoRes {
+        font-size: 23px;
+        color: white;
+        margin: 20px 20px;
+    }
+
+    #botonReseña {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+    }
+
+}
+
+@media (max-width: 1050px){
+
+    #textoF > p {
+        font-size: 16px;
+    }
+
+    #trailer {
+        font-size: 34px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #palomitas {
+        width: 45px;
+        padding-left: 10px;
+    }
+
+    #reseña {
+        width: 50%;
+        height: 220px;
+    }
+
+    #textoRes {
+        font-size: 20px;
+        margin: 18px 18px;
+    }
+
+    #botonReseña {
+        position: absolute;
+        top: 45%;
+        right: 14%;
+        display: flex;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    #ficha {
+        grid-template-columns: max-content max-content;
+        column-gap: 55px;
+        padding-top: 70px;
+    }
+
+    #textoF > p {
+        font-size: 16px;
+    }
+
+    #trailer {
+        font-size: 30px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #palomitas {
+        width: 43px;
+        padding-left: 10px;
+    }
+
+    #reseña {
+        width: 50%;
+        height: 220px;
+    }
+
+    #textoRes {
+        font-size: 18px;
+        margin: 10px 10px;
+    }
+
+    #botonReseña {
+        position: absolute;
+        top: 45%;
+        right: 14%;
+        display: flex;
+    }
+
+    #usuario {
+        font-size: 24px;
+    }
+
+    iframe {
+        width: 480px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    #ficha {
+        grid-template-columns: max-content max-content;
+        column-gap: 22px;
+        padding-top: 70px;
+    }
+
+    #ficha > h4 {
+        font-size: 2px;
+    }
+
+    #genero, #duracion {
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    #textoF > p {
+        font-size: 14px;
+    }
+
+    #trailer {
+        font-size: 26px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #palomitas {
+        width: 40px;
+        padding-left: 10px;
+    }
+
+    #reseña {
+        width: 50%;
+        height: 220px;
+    }
+    #textoRes {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    #botonReseña {
+        position: absolute;
+        top: 45%;
+        right: 14%;
+        display: flex;
+    }
+
+    #usuario {
+        font-size: 24px;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+}
+
+
+/* Responsive RESEÑA */
+
+
+@media (max-width: 1400px) {
+
+ 
+#escribir {
+    font-size: 29px;
+}
+
+#reseña {
+    margin-bottom: 80px;
+}
+
+#textoRes {
+    font-size: 28px;
+}
+
+#nota {
+    font-size: 34px;
+    padding-right: 15px;
+}
+
+.estrella {
+    width: 50px;
+}
+
+}
+
+@media (max-width: 1250px) {
+      
+    #textoRes {
+        font-size: 26px;
+        color: white;
+        margin: 20px;
+    }
+    
+    #tituloR {
+        font-size: 26px;
+        padding-bottom: 70px;
+    }
+      
+    #nota {
+        font-size: 32px;
+        padding-right: 15px;
+    }
+    
+    .estrella {
+        width: 46px;
+    }
+}
+
+@media (max-width: 1050px){
+    
+    #textoRes {
+        font-size: 22px;
+        color: white;
+        margin: 20px;
+    }
+    
+    #tituloR {
+        font-size: 26px;
+        padding-bottom: 70px;
+    }
+
+    #fondoV {
+        font-size: 21px;
+    }
+      
+    #nota {
+        font-size: 30px;
+        padding-right: 15px;
+    }
+    
+    .estrella {
+        width: 40px;
+    }
+
+    #enviar2 {
+        font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 850px) {
+
+    #escribir {
+        padding-top: 20px;
+    }
+
+    #textoRes {
+        font-size: 20px;
+        color: white;
+        margin: 20px;
+    }
+    
+    #tituloR {
+        font-size: 24px;
+        padding-bottom: 70px;
+    }
+
+    #fondoV {
+        font-size: 19px;
+    }
+      
+    #nota {
+        font-size: 26px;
+        padding-right: 10px;
+    }
+    
+    .estrella {
+        width: 36px;
+    }
+
+    #enviar2 {
+        font-size: 19px;
+        margin-bottom: 80px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    #escribir {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #textoRes {
+        font-size: 16px;
+        margin: 12px;
+    }
+    
+    #tituloR {
+        font-size: 20px;
+        padding-bottom: 60px;
+    }
+
+    #fondoV {
+        font-size: 16px;
+    }
+      
+    #nota {
+        font-size: 22px;
+        padding-right: 10px;
+    }
+    
+    .estrella {
+        width: 32px;
+    }
+
+    #enviar2 {
+        font-size: 19px;
+        margin-bottom: 70px;
+    }
+
+}
+
+
+/* Responsive SESIÓN */
+
+
+@media (max-width: 1400px) {
+  
+    #usuarioG {
+        width: 58px;
+    }
+
+    #sesion {
+        width: 50%;
+    }
+    
+    #userText, #passText  {
+        font-size: 29px;
+    }
+    
+    .olvidaste, .enlace {
+        font-size: 29px;
+    }
+
+    }
+    
+    @media (max-width: 1250px) {
+          
+        #usuarioG {
+            width: 56px;
+        }
+
+        .iniSes {
+            width: 70%;
+        }
+        
+        #sesion {
+            width: 55%;
+            height: 380px;
+            margin: auto;
+            padding-top: 38px;
+        }
+        
+        #userText, #passText {
+            font-size: 27px;
+        }
+        
+        .olvidaste, .enlace{
+            font-size: 27px;
+        }
+        
+        #enviar {
+            font-size: 23px;
+        }
+    }
+    
+    @media (max-width: 1050px){
+        
+        #usuarioG {
+            width: 55px;
+        }
+        
+        #sesion {
+            width: 60%;
+            height: 360px;
+        }
+        
+        #userText, #passText {
+            font-size: 26px;
+        }
+        
+        .olvidaste, .enlace {
+            font-size: 26px;
+        }
+        
+        #enviar {
+            font-size: 23px;
+        }
+        
+    }
+    
+    @media (max-width: 850px) {
+    
+        #usuarioG {
+            width: 52px;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+        
+        #sesion {
+            width: 60%;
+            height: 300px;
+            
+        }
+        
+        #passText{
+            padding-top: 10px;
+        }
+        #userText, #passText {
+            font-size: 24px;
+        }
+        
+        .olvidaste, .enlace {
+            font-size: 24px;
+        }
+        
+        #enviar {
+            font-size: 21px;
+        }
+    }
+    
+    
+    @media (max-width: 650px) {
+    
+        #usuarioG {
+            width: 50px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        #sesion {
+            width: 60%;
+            height: 320px;
+        }
+        
+        #passText{
+            padding-top: 10px;
+        }
+
+        #userText, #passText {
+            font-size: 23px;
+        }
+        
+        .olvidaste, .enlace {
+            font-size: 23px;
+        }
+        
+        #enviar {
+            font-size: 20px;
+        }
+    }
